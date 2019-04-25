@@ -1,8 +1,8 @@
 {
 "gitbook": "3.2.3",
-"title": "吴小龙同學",
-"description": "http://wuxiaolong.me/",
-"author": "WuXiaolong",
+"title": "清字派",
+"description": "http://book.zqingc.com/",
+"author": "zc",
 "language": "zh-hans",
 "links": {
 "sidebar": {
@@ -42,11 +42,11 @@
 ]
 },
 "github": {
-"url": "https://github.com/WuXiaolong"
+"url": "https://github.com/zqingc"
 },
 "donate": {
-"wechat": "http://7q5c2h.com1.z0.glb.clouddn.com/wechatpay.JPG",
-"title": "",
+"wechat": "https://github.com/zqingc/book/blob/master/1556204356.jpg",
+"title": "谢谢",
 "button": "赏",
 "wechatText": "微信打赏"
 },
