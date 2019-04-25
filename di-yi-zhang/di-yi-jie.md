@@ -1,5 +1,5 @@
 ---
-description: 春天
+description: Git使用规范
 ---
 
 # Git使用规范 {#article-title}
@@ -16,18 +16,12 @@ git --version
 
 _输出：git version 2.9.0.windows.1_
 
-
-
 # 二. Git 全局设置 {#zkzioo}
 
 ## 1.初始配置 {#vimopy}
 
-
-
 在使用Git之前，我们对Git做一个初始配置，我们需要设置用户名和电子邮箱。以便之后我们提交了代码后，Git能跟踪和标记是谁做了修改。  
 在命令行工具中，依次执行如下命令进行设置：
-
-
 
 ```
 git config --global user.name "<使用者名字>"
@@ -35,7 +29,7 @@ git config --global user.name "<使用者名字>"
 git config --global user.email "<电子邮箱>"
 ```
 
-_注意：替换掉命令中的`<使用者名字>`和`<电子邮箱>`，注意保留命令中的双引号。强烈推荐您使用与远程代码库中相同的用户名和电子邮箱_  
+_注意：替换掉命令中的_`<使用者名字>`_和_`<电子邮箱>`_，注意保留命令中的双引号。强烈推荐您使用与远程代码库中相同的用户名和电子邮箱_  
 配置完成后，我们也可以执行以下命令进行查看：
 
 ```
@@ -104,7 +98,7 @@ Your identification has been saved in /Users/you/.ssh/id_rsa.
 ```
 
 公钥文件`id_rsa.pub`创建成功后，默认是存储在用户目录`.ssh`中  
-_Window系统用户目录：`C:\Users\Administrator\.ssh\id_rsa.pub`_
+_Window系统用户目录：_`C:\Users\Administrator\.ssh\id_rsa.pub`
 
 # 四. 分支管理 {#o1m7ef}
 
@@ -168,7 +162,7 @@ git add my_file, my_other_file
 git commit -m "代码提交信息"
 ```
 
-_输入提交信息时，如果需要输入中文，则使用`-m`参数_  
+_输入提交信息时，如果需要输入中文，则使用_`-m`_参数_  
 _注意：提交我们的文件时，总是附带着有意义的注释，描述了它们现在的状态。_
 
 现在我们随时都可以回滚到这个提交状态。如果你有需要检查你现在的已加载（staged）和未加载（unstaged）文件的状态、提交等，你可以询问git的状态：
@@ -233,9 +227,6 @@ git merge --squash feature-xxx
 
 ![](https://cdn.nlark.com/yuque/0/2018/png/202333/1544080085856-0f68936c-83d1-45f2-8127-598c9ae2b65d.png)
 
-  
-
-
 提交合并后的代码
 
 ```
@@ -247,7 +238,4 @@ git commit -m "修改xxx"
 ```
 git push
 ```
-
-  
-
 
