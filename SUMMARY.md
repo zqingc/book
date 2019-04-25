@@ -1,6 +1,6 @@
-# Table of contents
+# Summary
 
 * [前言](README.md)
-* [第一章](di-yi-zhang/README.md)
-  * [第一节](di-yi-zhang/di-yi-jie.md)
+* [GIT](di-yi-zhang/README.md)
+  * [Git使用规范](di-yi-zhang/di-yi-jie.md)
 
