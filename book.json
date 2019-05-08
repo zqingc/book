@@ -15,7 +15,7 @@
     "pdf": "styles/pdf.css",
     "mobi": "styles/mobi.css",
     "epub": "styles/epub.css"
-}
+},
 "plugins": [
 "github",
 "donate",
