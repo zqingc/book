@@ -18,7 +18,6 @@
 "sharing-plus",
 "-highlight",
 "prism",
-"disqus",
 "toggle-chapters"
 ],
 "pluginsConfig": {
@@ -78,10 +77,6 @@
 "css": [
 "prismjs/themes/prism-tomorrow.css"
 ]
-},
-"disqus": {
-"shortName": "gitbookuse"
 }
-
 }
 }
