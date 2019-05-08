@@ -9,14 +9,17 @@
 
 }
 },
-"plugins": ["github",
+"plugins": [
+"github",
 "donate",
 "splitter",
 "anchor-navigation-ex",
 "-sharing",
 "sharing-plus",
 "-highlight",
-"prism"
+"prism",
+"disqus",
+"toggle-chapters"
 ],
 "pluginsConfig": {
 "sharing": {
@@ -77,5 +80,8 @@
 ]
 }
 }
+"disqus": {
+        "shortName": "gitbookuse"
+    }
 
 }
