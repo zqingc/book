@@ -239,3 +239,17 @@ git commit -m "修改xxx"
 git push
 ```
 
+Git 暂存代码
+
+```
+git stash 
+```
+
+取出暂存
+
+```
+git stash pop
+```
+
+
+
