@@ -25,9 +25,13 @@
 "sharing-plus",
 "-highlight",
 "prism",
-"toggle-chapters"
+"toggle-chapters",
+"disqus"
 ],
 "pluginsConfig": {
+"disqus": {
+        "shortName": "gitbookuse"
+    },
 "sharing": {
 "douban": false,
 "facebook": false,
