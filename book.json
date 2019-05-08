@@ -85,11 +85,6 @@
 "theme": "white",
 "family": "serif",
 "size": 2
-},
-"prism": {
-"css": [
-"prismjs/themes/prism-tomorrow.css"
-]
 }
 }
 }
