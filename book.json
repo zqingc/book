@@ -6,7 +6,6 @@
 "language": "zh-hans",
 "links": {
 "sidebar": {
-
 }
 },
 "styles": {
@@ -21,7 +20,6 @@
 "donate",
 ],
 "pluginsConfig": {
-
 "github": {
 "url": "https://github.com/zqingc"
 },
@@ -33,5 +31,5 @@
 "alipayText": "支付宝打赏",
 "wechatText": "微信打赏"
 }
-},
+}
 }
