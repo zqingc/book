@@ -21,12 +21,12 @@
 "donate",
 "splitter",
 "anchor-navigation-ex",
-"-sharing",
-"sharing-plus",
+"sharing",
 "-highlight",
 "prism",
 "toggle-chapters",
-"disqus"
+"disqus",
+"copy-code-button"
 ],
 "pluginsConfig": {
 "disqus": {
