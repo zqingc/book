@@ -19,41 +19,9 @@
 "plugins": [
 "github",
 "donate",
-"splitter",
-"anchor-navigation-ex",
-"sharing",
-"highlight",
-"prism",
-"toggle-chapters",
-"disqus",
-"copy-code-button"
 ],
 "pluginsConfig": {
-"disqus": {
-        "shortName": "gitbookuse"
-    },
-"sharing": {
-"douban": false,
-"facebook": false,
-"google": false,
-"hatenaBookmark": false,
-"instapaper": false,
-"line": false,
-"linkedin": false,
-"messenger": false,
-"pocket": false,
-"qq": false,
-"qzone": false,
-"stumbleupon": false,
-"twitter": false,
-"viber": false,
-"vk": false,
-"weibo": false,
-"whatsapp": false,
-"all": [
-"weibo","qq","qzone","google","douban"
-]
-},
+
 "github": {
 "url": "https://github.com/zqingc"
 },
@@ -65,26 +33,6 @@
 "alipayText": "支付宝打赏",
 "wechatText": "微信打赏"
 },
-"anchor-navigation-ex": {
-"associatedWithSummary":false,
-"showLevel":true,
-"multipleH1": true,
-"mode": "float",
 
-"pageTop": {
-"showLevelIcon": false,
-"level1Icon": "fa fa-hand-o-right",
-"level2Icon": "fa fa-hand-o-right",
-"level3Icon": "fa fa-hand-o-right"
-}
-},
-"theme-default": {
-"showLevel": true
-},
-"fontsettings": {
-"theme": "white",
-"family": "serif",
-"size": 2
-}
 }
 }
