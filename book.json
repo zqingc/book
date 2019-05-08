@@ -78,6 +78,10 @@
 "css": [
 "prismjs/themes/prism-tomorrow.css"
 ]
+},
+"disqus": {
+"shortName": "gitbookuse"
 }
+
 }
 }
