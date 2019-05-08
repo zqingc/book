@@ -58,9 +58,11 @@
 "url": "https://github.com/zqingc"
 },
 "donate": {
+"alipay": "https://github.com/zqingc/book/blob/master/1556204356.jpg",
 "wechat": "https://github.com/zqingc/book/blob/master/1556204356.jpg",
 "title": "谢谢",
 "button": "赏",
+"alipayText": "支付宝打赏",
 "wechatText": "微信打赏"
 },
 "anchor-navigation-ex": {
