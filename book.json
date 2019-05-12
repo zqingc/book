@@ -8,13 +8,6 @@
 "sidebar": {
 }
 },
-"styles": {
-    "website": "styles/website.css",
-    "ebook": "styles/ebook.css",
-    "pdf": "styles/pdf.css",
-    "mobi": "styles/mobi.css",
-    "epub": "styles/epub.css"
-},
 "plugins": [
 "github",
 "donate"
@@ -24,8 +17,8 @@
 "url": "https://github.com/zqingc"
 },
 "donate": {
-"alipay": "https://github.com/zqingc/book/blob/master/1556204356.jpg",
-"wechat": "https://github.com/zqingc/book/blob/master/1556204356.jpg",
+"alipay": "http://qiniu.zqingc.com/alipay.jpeg",
+"wechat": "http://qiniu.zqingc.com/wechat.jpg",
 "title": "谢谢",
 "button": "赏",
 "alipayText": "支付宝打赏",
