@@ -17,11 +17,9 @@
 "url": "https://github.com/zqingc"
 },
 "donate": {
-"alipay": "http://qiniu.zqingc.com/alipay.jpeg",
 "wechat": "http://qiniu.zqingc.com/wechat.jpg",
 "title": "谢谢",
 "button": "赏",
-"alipayText": "支付宝打赏",
 "wechatText": "微信打赏"
 }
 }
