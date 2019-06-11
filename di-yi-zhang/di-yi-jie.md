@@ -247,7 +247,7 @@ git stash
 
 取出暂存
 
-```
+```Git
 git stash pop
 ```
 
