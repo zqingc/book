@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>PHP · 清字派</title>
+        <title>富文本给图片地址加上域名 · 清字派</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="php/jiexi-excel.html" />
+    <link rel="next" href="go.html" />
     
     
-    <link rel="prev" href="di-yi-zhang/di-yi-jie.html" />
+    <link rel="prev" href="php/h5chang-jian-wen-ti-wei-xin-cai-guo-de-keng.html" />
     
 
     </head>
@@ -140,7 +140,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="php.html">
+        <li class="chapter " data-level="1.3" data-path="php.html">
             
                 <a href="php.html">
             
@@ -269,7 +269,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="fu-wen-ben-gei-tu-pian-di-zhi-jia-shang-yu-ming.html">
+        <li class="chapter active" data-level="1.4" data-path="fu-wen-ben-gei-tu-pian-di-zhi-jia-shang-yu-ming.html">
             
                 <a href="fu-wen-ben-gei-tu-pian-di-zhi-jia-shang-yu-ming.html">
             
@@ -351,7 +351,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >PHP</a>
+        <a href="." >富文本给图片地址加上域名</a>
     </h1>
 </div>
 
@@ -366,7 +366,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x6211;&#x662F;PHP&#x9636;&#x6BB5;</p>
+                                <pre><code class="lang-php">$content = preg_replace_callback(<span class="hljs-string">&apos;/&lt;[img|IMG].*?src=[\&apos;| \&quot;](?![http|https])(.*?(?:[\.gif|\.jpg]))[\&apos;|\&quot;].*?[\/]?&gt;/&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($r)</span> </span>{
+                    $str = <span class="hljs-string">&apos;http://&apos;</span>.$_SERVER[<span class="hljs-string">&apos;HTTP_HOST&apos;</span>].$r[<span class="hljs-number">1</span>];
+                    <span class="hljs-keyword">return</span> str_replace($r[<span class="hljs-number">1</span>], $str, $r[<span class="hljs-number">0</span>]);
+                }, $content);
+</code></pre>
 
                                 
                                 </section>
@@ -394,12 +398,12 @@
 
             
                 
-                <a href="di-yi-zhang/di-yi-jie.html" class="navigation navigation-prev " aria-label="Previous page: Git使用规范">
+                <a href="php/h5chang-jian-wen-ti-wei-xin-cai-guo-de-keng.html" class="navigation navigation-prev " aria-label="Previous page: H5常见问题 微信踩过得坑">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="php/jiexi-excel.html" class="navigation navigation-next " aria-label="Next page: 解析excel">
+                <a href="go.html" class="navigation navigation-next " aria-label="Next page: GO">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -410,7 +414,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"PHP","level":"1.3","depth":1,"next":{"title":"解析excel","level":"1.3.1","depth":2,"path":"php/jiexi-excel.md","ref":"php/jiexi-excel.md","articles":[{"title":"导出excel","level":"1.3.1.1","depth":3,"path":"php/jiexi-excel/dao-chu-excel.md","ref":"php/jiexi-excel/dao-chu-excel.md","articles":[]}]},"previous":{"title":"Git使用规范","level":"1.2.1","depth":2,"path":"di-yi-zhang/di-yi-jie.md","ref":"di-yi-zhang/di-yi-jie.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","donate"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/zqingc"},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"赏","title":"谢谢","wechat":"http://qiniu.zqingc.com/wechat.jpg","wechatText":"微信打赏"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zc","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"清字派","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3","description":"http://book.zqingc.com/"},"file":{"path":"php.md","mtime":"2019-05-08T13:59:02.809Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-12T13:15:12.522Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"富文本给图片地址加上域名","level":"1.4","depth":1,"next":{"title":"GO","level":"1.5","depth":1,"path":"go.md","ref":"go.md","articles":[]},"previous":{"title":"H5常见问题 微信踩过得坑","level":"1.3.7","depth":2,"path":"php/h5chang-jian-wen-ti-wei-xin-cai-guo-de-keng.md","ref":"php/h5chang-jian-wen-ti-wei-xin-cai-guo-de-keng.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","donate"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/zqingc"},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"赏","title":"谢谢","wechat":"http://qiniu.zqingc.com/wechat.jpg","wechatText":"微信打赏"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zc","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"清字派","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3","description":"http://book.zqingc.com/"},"file":{"path":"fu-wen-ben-gei-tu-pian-di-zhi-jia-shang-yu-ming.md","mtime":"2019-06-11T15:50:17.555Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-12T13:15:12.522Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
