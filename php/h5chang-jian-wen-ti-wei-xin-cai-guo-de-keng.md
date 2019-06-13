@@ -1,4 +1,4 @@
-https://www.cnblogs.com/tonnytong/p/7929243.html
+[https://www.cnblogs.com/tonnytong/p/7929243.html](https://www.cnblogs.com/tonnytong/p/7929243.html)
 
 h5常见的问题 微信踩过的坑
 
@@ -24,7 +24,7 @@ ios软键盘失效fixed定位层的位置，上下两个fixed定位层，上面�
     width: 100%;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-}　
+}
 ```
 
 微信内页面 切换tab或者之前隐藏的文字，字会变大,在body加上下面这句,或者加max-height 可参考
@@ -35,12 +35,13 @@ ios软键盘失效fixed定位层的位置，上下两个fixed定位层，上面�
 body{
     -webkit-text-size-adjust: 100% !important;
 }
-
 ```
 
 H5页面窗口自动调整到设备宽度，并禁止用户缩放页面
 
-    1）HTML页面结构
+```
+1）HTML页面结构
+```
 
 // width 设置viewport宽度，为一个正整数，或字符串‘device-width’
 
@@ -58,14 +59,16 @@ H5页面窗口自动调整到设备宽度，并禁止用户缩放页面
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 ```
 
-    2）JS动态判断
+```
+2）JS动态判断
+```
 
 ```js
 var phoneWidth = parseInt(window.screen.width);
 var phoneScale = phoneWidth/640;
 var ua = navigator.userAgent;
 if (/Android (\d+\.\d+)/.test(ua)){
- 
+
 　　var version = parseFloat(RegExp.$1);
 　　if(version>2.3){
 　　　　document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
@@ -107,7 +110,7 @@ PC端基础meta标签
     noindex：文件将不被检索；
     nofollow：页面上的链接不可以被查询。
  -->
-  
+
  <!-- 页面重定向和刷新：content内的数字代表时间（秒），既多少时间后刷新。如果加url,则会重定向到指定网页（搜索引擎能够自动检测，也很容易被引擎视作误导而受到惩罚）。-->
  <meta http-equiv="refresh" content="0;url=" />
 ```
@@ -146,7 +149,7 @@ PC端基础meta标签
 <meta name="x5-page-mode" content="app">
 <!-- windows phone 点击无高光 -->
 <meta name="msapplication-tap-highlight" content="no">
- 
+
 <meta name="author" content="author name" /> <!-- 定义网页作者 -->
 <meta name="google" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -189,7 +192,7 @@ body { font-family: Microsoft Yahei,SimSun,Helvetica; }
 
 打电话发短信写邮件怎么实现
 
- 一、打电话
+一、打电话
 
 ```php
 <a href="tel:0755-10086">打电话给:0755-10086</a>
@@ -201,7 +204,7 @@ body { font-family: Microsoft Yahei,SimSun,Helvetica; }
 <a href="sms:10086">发短信给: 10086</a>
 ```
 
- 三、写邮件
+三、写邮件
 
 注：在添加这些功能时，第一个功能以"?"开头，后面的以"&"开头
 
@@ -329,7 +332,7 @@ zepto的touch模块，tap事件也是为了解决在click的延迟问题
 
 * Rentina显示屏原理及设计方案
 
-说明：retina屏是一种具备超高像素密度的液晶屏，同样大小的屏幕上显示的像素点由1个变为多个，如在同样带下的屏幕上，苹果设备的retina显示屏中，像素点1个变为4个。 在高清显示屏中的位图被放大，图片会变得模糊，因此移动端的视觉稿通常会设计为传统PC的2倍。 那么，前端的应对方案是：设计稿切出来的图片长宽保证为偶数，并使用backgroud-size把图片缩小为原来的1/2 
+说明：retina屏是一种具备超高像素密度的液晶屏，同样大小的屏幕上显示的像素点由1个变为多个，如在同样带下的屏幕上，苹果设备的retina显示屏中，像素点1个变为4个。 在高清显示屏中的位图被放大，图片会变得模糊，因此移动端的视觉稿通常会设计为传统PC的2倍。 那么，前端的应对方案是：设计稿切出来的图片长宽保证为偶数，并使用backgroud-size把图片缩小为原来的1/2
 
 ```css
 //例如图片宽高为：200px*200px，那么写法如下
@@ -342,27 +345,25 @@ zepto的touch模块，tap事件也是为了解决在click的延迟问题
 //image-set设计Rentina背景图
 image-set,webkit私有属性，也是CSS4的属性，为解决Rentina屏幕下的图像而生。
 .css {
-	background: url(images/bg.jpg) no-repeat center;
-	background: -webkit-image-set(
-	url(images/bg.jpg) 1x,     //支持image-set普通屏
-	url(images/bg-2x.jpg) 2x); //支持image-set的Rentinan
+    background: url(images/bg.jpg) no-repeat center;
+    background: -webkit-image-set(
+    url(images/bg.jpg) 1x,     //支持image-set普通屏
+    url(images/bg-2x.jpg) 2x); //支持image-set的Rentinan
 }
 ```
-
-
 
 点击元素产生背景或边框怎么去掉
 
 //ios用户点击一个链接，会出现一个半透明灰色遮罩, 如果想要禁用，可设置-webkit-tap-highlight-color的alpha值为0去除灰色半透明遮罩； //android用户点击一个链接，会出现一个边框或者半透明灰色遮罩, 不同生产商定义出来额效果不一样，可设置-webkit-tap-highlight-color的alpha值为0去除部分机器自带的效果； //winphone系统,点击标签产生的灰色半透明背景，能通过设置
 
-`< meta name="msapplication-tap-highlight" content="no">`去掉； 
+`< meta name="msapplication-tap-highlight" content="no">`去掉；
 
 //特殊说明：有些机型去除不了，如小米2。对于按钮类还有个办法，不使用a或者input标签，直接用div标签
 
 ```css
 a,button,input,textarea { 
-	-webkit-tap-highlight-color: rgba(0,0,0,0); 
-	-webkit-user-modify:read-write-plaintext-only; //-webkit-user-modify有个副作用，就是输入法不再能够输入多个字符
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-user-modify:read-write-plaintext-only; //-webkit-user-modify有个副作用，就是输入法不再能够输入多个字符
 }   
 // 也可以 
 * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
@@ -372,13 +373,13 @@ a,button,input,textarea {
 
 美化表单元素
 
- 一、使用appearance改变webkit浏览器的默认外观
+一、使用appearance改变webkit浏览器的默认外观
 
 ```css
 input,select { -webkit-appearance:none; appearance: none; }
 ```
 
- 二、winphone下，使用伪元素改变表单元素默认外观 
+二、winphone下，使用伪元素改变表单元素默认外观
 
 1.禁用select默认箭头，::-ms-expand 修改表单控件下拉箭头，设置隐藏并使用背景图片来修饰
 
@@ -412,7 +413,7 @@ html { font-size: 62.5%; }   //10*16 = 62.5%
 设置12px字体 这里注意在rem前要加上对应的px值，解决不支持rem的浏览器的兼容问题，做到优雅降级
 
 ```css
-body { font-size:12px; font-size:1.2rem; }  
+body { font-size:12px; font-size:1.2rem; }
 ```
 
 超实用的CSS样式
@@ -472,17 +473,17 @@ html { -ms-touch-action:none; } //禁止winphone默认触摸事件
 ```js
 //JS处理
 function orientInit(){
-	var orientChk = document.documentElement.clientWidth > document.documentElement.clientHeight?'landscape':'portrait';
-	if(orientChk =='lapdscape'){
-		//这里是横屏下需要执行的事件
-	}else{
-		//这里是竖屏下需要执行的事件
-	}
+    var orientChk = document.documentElement.clientWidth > document.documentElement.clientHeight?'landscape':'portrait';
+    if(orientChk =='lapdscape'){
+        //这里是横屏下需要执行的事件
+    }else{
+        //这里是竖屏下需要执行的事件
+    }
 }
 
 orientInit();
 window.addEventListener('onorientationchange' in window?'orientationchange':'resize', function(){
-	setTimeout(orientInit, 100);
+    setTimeout(orientInit, 100);
 },false)
 ```
 
@@ -492,10 +493,7 @@ window.addEventListener('onorientationchange' in window?'orientationchange':'res
 @media all and (orientation:portrait){   }
 //横屏时样式
 @media all and (orientation:landscape){   }
-
 ```
-
-
 
 audio元素和video元素在ios和andriod中无法自动
 
@@ -506,21 +504,17 @@ audio元素和video元素在ios和andriod中无法自动
 
 //音频，写法二
 
-<audio controls="controls">	
-	<source src="music/bg.ogg" type="audio/ogg"></source>
-	<source src="music/bg.mp3" type="audio/mpeg"></source>
-	优先播放音乐bg.ogg，不支持在播放bg.mp3
+<audio controls="controls">    
+    <source src="music/bg.ogg" type="audio/ogg"></source>
+    <source src="music/bg.mp3" type="audio/mpeg"></source>
+    优先播放音乐bg.ogg，不支持在播放bg.mp3
 </audio>
-
-
 ```
-
-
 
 ```js
 //JS绑定自动播放（操作window时，播放音乐）
 $(window).one('touchstart', function(){
-	music.play();
+    music.play();
 })
 
 //微信下兼容处理
@@ -529,9 +523,9 @@ document.addEventListener("WeixinJSBridgeReady", function () {
 }, false);
 ```
 
-小结 
+小结
 
-1.audio元素的autoplay属性在IOS及Android上无法使用，在PC端正常 
+1.audio元素的autoplay属性在IOS及Android上无法使用，在PC端正常
 
 2.audio元素没有设置controls时，在IOS及Android会占据空间大小，而在PC端Chrome是不会占据任何空间
 
@@ -540,31 +534,29 @@ document.addEventListener("WeixinJSBridgeReady", function () {
 ```js
 // 运用HTML5的deviceMotion，调用重力感应事件
 if(window.DeviceMotionEvent){
-	document.addEventListener('devicemotion', deviceMotionHandler, false)
-}	
+    document.addEventListener('devicemotion', deviceMotionHandler, false)
+}    
 
 var speed = 30;
 var x = y = z = lastX = lastY = lastZ = 0;
 function deviceMotionHandler(eventData){
-	var acceleration = event.accelerationIncludingGravity;
-	x = acceleration.x;
-	y = acceleration.y; 
-	z = acceleration.z;
-	if(Math.abs(x-lastX)>speed || Math.abs(y-lastY)>speed || Math.abs(z-lastZ)>speed ){
-		//这里是摇动后要执行的方法 
-		yaoAfter();
-	}
-	lastX = x;
-	lastY = y;
-	lastZ = z;
+    var acceleration = event.accelerationIncludingGravity;
+    x = acceleration.x;
+    y = acceleration.y; 
+    z = acceleration.z;
+    if(Math.abs(x-lastX)>speed || Math.abs(y-lastY)>speed || Math.abs(z-lastZ)>speed ){
+        //这里是摇动后要执行的方法 
+        yaoAfter();
+    }
+    lastX = x;
+    lastY = y;
+    lastZ = z;
 }
 
 function yaoAfter(){
-	//do something
+    //do something
 }
 ```
-
-
 
 微信浏览器用户调整字体大小后页面矬了，怎么阻止用户调整
 
@@ -572,19 +564,19 @@ function yaoAfter(){
 //以下代码可使Android机页面不再受用户字体缩放强制改变大小，但是会有1S左右延时，期间可以考虑loading来处理
 
 if (typeof(WeixinJSBridge) == "undefined") {
-	document.addEventListener("WeixinJSBridgeReady", function (e) {
-	    setTimeout(function(){
-		    WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize':0}, function(res){
-			    alert(JSON.stringify(res));
-		    })
-	    }, 0)
-	});
-}else{	
+    document.addEventListener("WeixinJSBridgeReady", function (e) {
+        setTimeout(function(){
+            WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize':0}, function(res){
+                alert(JSON.stringify(res));
+            })
+        }, 0)
+    });
+}else{    
     setTimeout(function(){
-	    WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize':0}, function(res){
-		    alert(JSON.stringify(res));
-	    })
-    }, 0)	
+        WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize':0}, function(res){
+            alert(JSON.stringify(res));
+        })
+    }, 0)    
 }
 ```
 
@@ -612,11 +604,11 @@ body { -webkit-text-size-adjust:100%!important; }
 </div>
 <script src="iscroll.js"></script>
 <script>
-	var myscroll;
-	function loaded(){
-		myscroll=new iScroll("wrapper");
-	}
-	window.addEventListener("DOMContentLoaded",loaded,false);
+    var myscroll;
+    function loaded(){
+        myscroll=new iScroll("wrapper");
+    }
+    window.addEventListener("DOMContentLoaded",loaded,false);
 </script>
 
 
@@ -625,14 +617,148 @@ body { -webkit-text-size-adjust:100%!important; }
 //解决方案:
 var ua = navigator.userAgent.indexOf('Android');
 if(ua>-1){
-	$('.ipt').on('focus', function(){
-		$('.css').css({'visibility':'hidden'})
-	}).on('blur', function(){
-		$('.css').css({'visibility':'visible'})
-	})
+    $('.ipt').on('focus', function(){
+        $('.css').css({'visibility':'hidden'})
+    }).on('blur', function(){
+        $('.css').css({'visibility':'visible'})
+    })
 }
+```
+
+**播放视频不全屏**
+
+```js
+<!--
+1.ios7+支持自动播放
+2.支持Airplay的设备（如：音箱、Apple TV)播放
+x-webkit-airplay="true"
+3.播放视频不全屏
+webkit-playsinline="true"
+-->
+<video x-webkit-airplay="true" webkit-playsinline="true" preload="auto" autoplay src="http://"></video>
+JS判断设备
+function deviceType(){
+    var ua = navigator.userAgent;
+    var agent = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];   
+    for(var i=0; i<len,len = agent.length; i++){
+        if(ua.indexOf(agent[i])>0){         
+            break;
+        }
+    }
+}
+deviceType();
+window.addEventListener('resize', function(){
+    deviceType();
+})
+```
+
+**JS判断微信浏览器**
+
+```js
+function isWeixin(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=='micromessenger'){
+        return true;
+    }else{
+        return false;
+    }
+}
+```
+
+**android 2.3 bug**
+
+```css
+//1.@-webkit-keyframes 需要以0%开始100%结束，0%的百分号不能去掉
+//2.after和before伪类无法使用动画animation
+//3.border-radius不支持%单位，如要兼容，可以给radius设置一下较大的值
+//4.translate百分比的写法和scale在一起会导致失效，例如：
+-webkit-transform: translate(-50%,-50%) scale(-0.5, 1)
+```
+
+android 4.x bug
 
 ```
+//1.三星 Galaxy S4中自带浏览器不支持border-radius缩写
+//2.同时设置border-radius和背景色的时候，背景色会溢出到圆角以外部分
+//3.部分手机(如三星)，a链接支持鼠标:visited事件，也就是说链接访问后文字变为紫色
+//4.android无法同时播放多音频audio
+```
+
+**消除transition闪屏**
+
+```css
+.css {
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+}
+```
+
+**开启硬件加速**
+
+```css
+//目前，像Chrome/Filefox/Safari/IE9+以及最新版本Opera都支持硬件加速，当检测到某个DOM元素应用了某些CSS规则时就会自动开启，从而解决页面闪白，保证动画流畅。
+.css {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+```
+
+**渲染优化**
+
+```
+//1.禁止使用iframe（阻塞父文档onload事件）
+//2.禁止使用gif图片实现loading效果（降低CPU消耗，提升渲染性能）
+//使用CSS3代码代替JS动画；
+//开启GPU加速；
+//使用base64位编码图片(不小图而言，大图不建议使用)
+// 对于一些小图标，可以使用base64位编码，以减少网络请求。但不建议大图使用，比较耗费CPU。小图标优势在于：
+　　　　//1.减少HTTP请求；
+　　　　//2.避免文件跨域；
+    //3.修改及时生效；
+```
+
+**腾讯方案**
+
+```js
+var autoScale = function(){
+    var ratio = 320/504,   //这是设计稿的宽高比（504是Iphone的高度去掉标题栏高度）
+        winW = document.getElement.clientWidth,
+        winH = document.getElement.clientHeight,
+        ratio2 = winW/winH,
+        scale;
+    if(ratio<ratio2){
+        scale = (winH/504).toString().substring(0, 6);
+    }else{
+        scale = (winW/320).toString().substring(0, 6); 
+    }
+    var cssText = '-webkit-transform: scale('+scale+');-webkit-transform-origin: top; opacity:1;' 
+    $('.wrap').attr('style', cssText);
+}
+setTimeout(function(){
+    if(document.documentElement.clientWidth/document.documentElement.clientHeight !== 320/504){
+        autoScale();
+    }else{
+        $('.page').css({'opacity': 1});
+    }
+}, 300)  //添加一定时长以确保宽高获取正确<br>
+window.addEventListener('onorientationchange' in window?'orientationchange':'resize', autoScale, false){
+        detectOrientatioin();
+}   //切换横竖屏
+ 
+function detectOrientatioin(){
+    if(window.orientation==180 || window.orientation==0){
+        //竖屏
+    }
+    if(window.orientation==90 || window.orientation==-90){
+        //横屏
+    }
+}
+```
+
+
 
 
 
