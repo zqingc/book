@@ -21,8 +21,13 @@
   * [保存网络图片到服务器](php/bao-cun-wang-luo-tu-pian-dao-fu-wu-qi.md)
   * [PHP,Mysql-根据一个给定经纬度的点，进行附近地点查询–合理利用算法，即附近的人](php/phpmysqlgen-ju-yi-ge-gei-ding-jing-wei-du-de-dian-ff0c-jin-xing-fu-jin-di-dian-cha-xun-2013-he-li-li-yong-suan-fa-ff0c-ji-fu-jin-de-ren.md)
   * [PHP保留两位小数的几种方法](php/phpbao-liu-liang-wei-xiao-shu-de-ji-zhong-fang-fa.md)
-* [富文本给图片地址加上域名](fu-wen-ben-gei-tu-pian-di-zhi-jia-shang-yu-ming.md)
 * [GO](go.md)
 * [前端](qian-duan.md)
+  * [富文本给图片地址加上域名](fu-wen-ben-gei-tu-pian-di-zhi-jia-shang-yu-ming.md)
+  * [计算显示窗口高度](qian-duan/ji-suan-xian-shi-chuang-kou-gao-du.md)
+  * [打开微信快捷方法](da-kai-wei-xin-kuai-jie-fang-fa.md)
 * [数据库](shu-ju-ku.md)
+* 小程序
+  * [微信小程序，如何在返回前一个页面时，执行前一个页面的方法](wei-xin-xiao-cheng-xu-ff0c-ru-he-zai-fan-hui-qian-yi-ge-ye-mian-shi-ff0c-zhi-xing-qian-yi-ge-ye-mian-de-fang-fa.md)
+  * [各类消息提醒](ge-lei-xiao-xi-ti-xing.md)
 

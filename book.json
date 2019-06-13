@@ -9,8 +9,11 @@
 }
 },
 "plugins": [
+"prism",
 "github",
-"donate"
+"donate",
+"toggle-chapters",
+"splitter"
 ],
 "pluginsConfig": {
 "github": {
