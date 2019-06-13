@@ -12,6 +12,8 @@
   * [微信授权登录](php/wei-xin-shou-quan-deng-lu.md)
   * [计算两个经纬度之间的距离](php/ji-suan-liang-ge-jing-wei-du-zhi-jian-de-ju-li.md)
   * [H5常见问题 微信踩过得坑](php/h5chang-jian-wen-ti-wei-xin-cai-guo-de-keng.md)
+  * [一个不错的MYSQL数据库备份类PHP版，精简版](php/yi-ge-bu-cuo-de-mysql-shu-ju-ku-bei-fen-lei-php-ban-ff0c-jing-jian-ban.md)
+  * [SQL 查询重复出现次数最多的记录，按出现频率排序\(SQL语句\)](php/sql-cha-xun-zhong-fu-chu-xian-ci-shu-zui-duo-de-ji-lu-ff0c-an-chu-xian-pin-lv-pai-5e8f28-sql-yu-53e529.md)
 * [富文本给图片地址加上域名](fu-wen-ben-gei-tu-pian-di-zhi-jia-shang-yu-ming.md)
 * [GO](go.md)
 * [前端](qian-duan.md)
