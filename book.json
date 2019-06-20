@@ -15,8 +15,8 @@
 "chapter-fold",
 "splitter",
 "-lunr", 
-          "-search", 
-          "search-pro"
+"-search", 
+"search-pro"
 ],
 "pluginsConfig": {
 "github": {
