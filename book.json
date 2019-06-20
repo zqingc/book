@@ -16,7 +16,8 @@
 "splitter",
 "-lunr", 
 "-search", 
-"search-pro"
+"search-pro",
+"pageview-count"
 ],
 "pluginsConfig": {
 "github": {
