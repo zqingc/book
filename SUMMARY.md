@@ -27,6 +27,7 @@
   * [计算显示窗口高度](qian-duan/ji-suan-xian-shi-chuang-kou-gao-du.md)
   * [打开微信快捷方法](da-kai-wei-xin-kuai-jie-fang-fa.md)
 * [数据库](shu-ju-ku.md)
+  -  [命令行操作](mlh.md)
 * 小程序
   * [微信小程序，如何在返回前一个页面时，执行前一个页面的方法](wei-xin-xiao-cheng-xu-ff0c-ru-he-zai-fan-hui-qian-yi-ge-ye-mian-shi-ff0c-zhi-xing-qian-yi-ge-ye-mian-de-fang-fa.md)
   * [各类消息提醒](ge-lei-xiao-xi-ti-xing.md)
