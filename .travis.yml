@@ -4,17 +4,21 @@ node_js:
 branches:
   only:
   - master    # 构建的分支
+  # 缓存依赖
 cache:
   directories:
-  - node_modules # 依赖缓存的目录
+    - $HOME/.npm
+
 before_install:
 - export TZ='Asia/Shanghai'  # 设置时区
 install:
  - npm install -g gitbook-cli # 安装编译工具
+ # 安装 gitbook 插件
+  - gitbook install
 script:
 - gitbook build
 deploy:
-  
+
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN # github 上的token环境变量
