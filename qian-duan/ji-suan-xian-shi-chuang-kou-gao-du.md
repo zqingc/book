@@ -1,4 +1,4 @@
-计算显示窗口高度
+计算显示窗口高度666
 
 ```js
 var scale = 750/res.screenWidth//比例
