@@ -7,7 +7,7 @@ branches:
   # 缓存依赖
 cache:
   directories:
-    - $HOME/.npm
+    - node_modules # 依赖缓存的目录
 
 before_install:
 - export TZ='Asia/Shanghai'  # 设置时区
