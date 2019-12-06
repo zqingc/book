@@ -9,7 +9,6 @@
 }
 },
 "plugins": [
-"prism",
 "github",
 "donate",
 "chapter-fold",
