@@ -26,7 +26,7 @@ deploy:
   provider: pages
   cleanup: true
   token: $GITHUB_TOKEN # github 上的token环境变量
-  local_dir: ./_book ## 根据情况自定义到静态文件输出目录
+  local_dir: _book ## 根据情况自定义到静态文件输出目录
   target_branch: gh-pages
   verbose: true
   on:
