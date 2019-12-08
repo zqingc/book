@@ -6,7 +6,7 @@ cache: npm
 notifications:
   email:
     recipients:
-      - abc@gmail.com # 设置通知邮件
+      - 1270789331@gmail.com # 设置通知邮件
     on_success: change
     on_failure: always
 
@@ -20,15 +20,11 @@ script:
 after_script:
   - cd _book
   - git init
-  - git remote add origin https://${REF}
+  - git remote add origin https://${GH_REF}
   - git add .
-  - git commit -m "Updated By Travis-CI With Build $TRAVIS_BUILD_NUMBER For Github Pages"
-  - git push --force --quiet "https://${TOKEN}@${REF}" master:gh-pages
+  - git commit -m "zc commits"
+  - git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:gh-pages
 
 branches:
   only:
     - master
-
-env:
-  global:
-    - REF=github.com/riskers/gitbook-template.git # 设置 github 地址
