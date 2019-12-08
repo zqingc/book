@@ -28,3 +28,7 @@ after_script:
 branches:
   only:
     - master
+
+env:
+  global:
+    - GH_REF=https://github.com/zqingc/book.git # 设置 github 地址
