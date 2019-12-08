@@ -17,7 +17,7 @@ install:
  - gitbook install
 script:
  - gitbook build
- deploy:
+deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN # github 上的token环境变量
