@@ -4,7 +4,6 @@ node_js:
 branches:
   only:
   - master    # 构建的分支
-  - gh-pages
 
 # 缓存依赖
 cache:
