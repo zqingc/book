@@ -3,7 +3,7 @@ node_js:
   - "v11.14.0"  # 对应的版本
 branches:
   only:
-  - master    # 构建的分支
+  - gh-pages    # 构建的分支
 
 # 缓存依赖
 cache:
@@ -25,6 +25,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   token: $GITHUB_TOKEN # github 上的token环境变量
+  keep_history: true
   local_dir: ./_book ## 根据情况自定义到静态文件输出目录
   target_branch: gh-pages
   verbose: true
