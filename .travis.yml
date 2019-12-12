@@ -3,7 +3,8 @@ node_js:
   - "v11.14.0"  # 对应的版本
 branches:
   only:
-  - gh-pages    # 构建的分支
+  - master    # 构建的分支
+  - gh-pages
 
 # 缓存依赖
 cache:
