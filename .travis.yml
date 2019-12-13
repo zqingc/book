@@ -3,24 +3,24 @@ node_js:
   - "v11.14.0"  # 对应的版本
 branches:
   only:
-  - master    # 构建的分支
-  - gh-pages
+   - master    # 构建的分支
+  # - gh-pages
 
 # 缓存依赖
 cache:
   directories:
-  - node_modules # 依赖缓存的目录
+   - node_modules # 依赖缓存的目录
 
 before_install:
-- export TZ='Asia/Shanghai'  # 设置时区
+ - export TZ='Asia/Shanghai'  # 设置时区
 install:
  - npm install  gitbook-cli -g # 安装编译工具
  # 安装 gitbook 插件
- - gitbook install
+- gitbook install
 
 script:
   
- - gitbook build
+- gitbook build
 
 deploy:
   provider: pages
