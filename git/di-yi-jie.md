@@ -4,7 +4,7 @@ description: Git使用规范
 
 # Git使用规范 {#article-title}
 
-# 一. Windows上安装Git {#8geppk}
+##一. Windows上安装Git {#8geppk}
 
 访问官网[https://git-scm.com/download/win](https://git-scm.com/download/win)下载对应版本的安装包。  
 安装完成后，从`开始菜单`---&gt;`Git`---&gt;`Git Bash`，打开命令行工具。  
@@ -16,9 +16,9 @@ git --version
 
 _输出：git version 2.9.0.windows.1_
 
-# 二. Git 全局设置 {#zkzioo}
+## 二. Git 全局设置 {#zkzioo}
 
-## 1.初始配置 {#vimopy}
+### 1.初始配置 {#vimopy}
 
 在使用Git之前，我们对Git做一个初始配置，我们需要设置用户名和电子邮箱。以便之后我们提交了代码后，Git能跟踪和标记是谁做了修改。  
 在命令行工具中，依次执行如下命令进行设置：
@@ -38,7 +38,7 @@ git config --global user.name
 git config --global user.email
 ```
 
-## 2.Windows控制台无法显示中文 {#ydvuxt}
+### 2.Windows控制台无法显示中文 {#ydvuxt}
 
 Windows上的控制台遇到中文名称的时候会显示为类似"\346\226\260\350\246..."这样的字符，执行以下命令让它显示出正确的中文：
 
@@ -46,7 +46,7 @@ Windows上的控制台遇到中文名称的时候会显示为类似"\346\226\260
 git config --global core.quotepath off
 ```
 
-## 3.Windows上拉取的文件编程修改状态 {#29gart}
+### 3.Windows上拉取的文件编程修改状态 {#29gart}
 
 **问题：**
 
@@ -66,7 +66,7 @@ git config --global core.filemode false
 git config --global core.safecrlf true
 ```
 
-# 三. 配置 SSH 公钥 {#4ktrgm}
+## 三. 配置 SSH 公钥 {#4ktrgm}
 
 推荐使用 SSH 协议来访问 Git 仓库。
 
@@ -100,7 +100,7 @@ Your identification has been saved in /Users/you/.ssh/id_rsa.
 公钥文件`id_rsa.pub`创建成功后，默认是存储在用户目录`.ssh`中  
 _Window系统用户目录：_`C:\Users\Administrator\.ssh\id_rsa.pub`
 
-# 四. 分支管理 {#o1m7ef}
+## 四. 分支管理 {#o1m7ef}
 
 代码库中存在两个固定分支：
 
@@ -125,6 +125,12 @@ git clone git@git.coding.net:xxx
 
 ```
 git pull
+
+// 获取远端分支
+git pull origin <branch>   
+
+// 从远端拉去本地没有的分支并新建本地分支
+git checkout -b newbranch origin/newbranch   
 ```
 
 ### 2. 创建功能分支 {#9blbek}
@@ -201,7 +207,7 @@ git branch
 git branch -D feature-xxx
 ```
 
-# 五. 合并分支 {#gg8gdu}
+## 五. 合并分支 {#gg8gdu}
 
 如果要将其他分支的修改合并到 master 分支。
 
@@ -217,15 +223,11 @@ git checkout master
 git pull
 ```
 
-进行合并
+进行合并 注意这里使用`--squash`参数，用来把一些不必要commit进行压缩
 
-```
+```git
 git merge --squash feature-xxx
 ```
-
-注意这里使用`--squash`参数，用来把一些不必要commit进行压缩，比如说，你的feature在开发的时候写的commit很乱，那么我们合并的时候不希望把这些历史commit带过来，于是使用--squash进行合并，此时文件已经同合并后一样了，但不移动HEAD，不提交。
-
-![](https://cdn.nlark.com/yuque/0/2018/png/202333/1544080085856-0f68936c-83d1-45f2-8127-598c9ae2b65d.png)
 
 提交合并后的代码
 
@@ -251,5 +253,38 @@ git stash
 git stash pop
 ```
 
+1.添加tag 标签
 
+``` 
+git tag <name>  // 打标签
+```
 
+加上-a参数来创建一个带备注的tag，备注信息由-m指定。如果你未传入-m则创建过程系统会自动为你打开编辑器让你填写备注信息
+
+```
+git tag -a tagName -m "my tag"
+```
+
+2.列出已有的tag
+
+```
+git tag
+```
+
+3.给指定的某个commit号加tag
+
+```javascript
+git tag -a v1.2 9fceb02 -m "my tag"
+```
+
+4.将tag同步到远程服务器
+
+```javascript
+git push origin v1.0
+```
+
+5.推送所有：
+
+```javascript
+git push origin --tags
+```

@@ -1,8 +1,8 @@
 # Summary
 
-* [前言2](README.md)
-* [GIT](di-yi-zhang/README.md)
-  * [Git使用规范](di-yi-zhang/di-yi-jie.md)
+* [前言](README.md)
+* [GIT](git/README.md)
+  * [Git使用规范](git/di-yi-jie.md)
 * [PHP](php.md)
   * [解析excel](php/jiexi-excel.md)
     * [导出excel](php/jiexi-excel/dao-chu-excel.md)
@@ -26,7 +26,7 @@
   * [富文本给图片地址加上域名](fu-wen-ben-gei-tu-pian-di-zhi-jia-shang-yu-ming.md)
   * [计算显示窗口高度](qian-duan/ji-suan-xian-shi-chuang-kou-gao-du.md)
   * [打开微信快捷方法](da-kai-wei-xin-kuai-jie-fang-fa.md)
-* [数据库1](shu-ju-ku.md)
+* [数据库](shu-ju-ku.md)
   * [命令行操作](mlh.md)
 * [小程序](wechat.md)
   * [微信小程序，如何在返回前一个页面时，执行前一个页面的方法](wei-xin-xiao-cheng-xu-ff0c-ru-he-zai-fan-hui-qian-yi-ge-ye-mian-shi-ff0c-zhi-xing-qian-yi-ge-ye-mian-de-fang-fa.md)
