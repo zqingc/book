@@ -25,6 +25,7 @@ deploy:
   # provider: pages:git
   # deploy_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQD1hhFm4wMj1jIVwuc8FJuCu6Mev9/JvFhet8pe1O5Qai/Lwtvq4N8B53XzeEBX5pmq5pHOYrhEfDrXyANCUnP3Y40qekzGteZB58HMRRj0e7YXSuB0OsFxNeTLim5afrDG0prlYrBxWhLlaF6GWxFu8C4WW3PbQzu25L80XEaLKEj66mmn3Kf5AYGRwRhbtl/wtvq+bJBkpoXKGTJaZZAJEke97W+uDR/Mf8gkG34B8mDrOnhrmOEZuHehDG7gPRYQ3cRe1cDnCb9E24mifCSV2wVGyDBzoleeXiQ2wyobPv5p7IgVjGMzh2YCGzcT8uVYEAhdX9aaVmZQW/3+/bbf2s8AU2p/hwTfMZdxuY0IsUS2YbJ2SWkaOpHOuJC26iLB23Zo0Lbw2UDhGhE04oEha39bUVoirAbypBe3GmqgtJiZMK37iQSeevjxh7XDsVMDMMYImAAzAQ5mS2m5x3Nffn4HjuK36hb2YdGBvvlTGV7rePyT5/kg/QSlnUK/HEVp5+sU0DP2yMdQCE+8jZ7P+OKt4lnqB5b2eXC9kaS2Ks9V8Faq8qP916iv0V+XMr2mIsVklXREi1hb5CP8EbCx70GWtfjzqQXFYR5r1BwT7579RR6U6BKCQpt84YJ8s1WwbxcPq7+UQ9S7RvLK+mnrz8e8l7oo8sVjmzjfan+DIw== 1270789331@qq.com
   # edge: true # opt in to dpl v2
+  fqdn: book.zqingc.com
   provider: pages
   skip_cleanup: true
   token: $GITHUB_TOKEN # github 上的token环境变量
