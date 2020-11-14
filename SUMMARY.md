@@ -17,4 +17,6 @@
   * [各类消息提醒](ge-lei-xiao-xi-ti-xing.md)
 * [Mac](Mac/brew.md)
 	* [Mac 保护机制](Mac/csrutil.md)
+* [其他](Other/other.md)
+	* [镜像加速器](Other/mirrors.md)
 
