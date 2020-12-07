@@ -3,6 +3,7 @@
 * [前言](README.md)
 * [GIT](git/README.md)
   * [Git使用规范](git/di-yi-jie.md)
+  * [其他命令](git/gitother.md)
 * [PHP](php/php.md)
   * [H5常见问题 微信踩过得坑](php/h5chang-jian-wen-ti-wei-xin-cai-guo-de-keng.md)
   * [使用phpqrcode生成二维码](php/shi-yong-phpqrcode-sheng-cheng-er-wei-ma.md)
