@@ -253,6 +253,10 @@ git stash
 git stash pop
 ```
 
+
+
+## 其它
+
 1.添加tag 标签
 
 ``` 
@@ -288,3 +292,10 @@ git push origin v1.0
 ```javascript
 git push origin --tags
 ```
+
+6. 忽略已控制的文件
+
+   ```git
+   git rm --cached application/database.php
+   ```
+

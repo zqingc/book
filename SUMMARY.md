@@ -11,6 +11,7 @@
 * [GO](Golang/go.md)
 * [前端](qian-duan/qian-duan.md)
   * [打开微信快捷方法](qian-dun/da-kai-wei-xin-kuai-jie-fang-fa.md)
+  * [js帮助方法](大前端/Js/util.md)
 * [数据库](sjk/shu-ju-ku.md)
   * [命令行操作](sjk/mlh.md)
 * [小程序](wechat.md)
